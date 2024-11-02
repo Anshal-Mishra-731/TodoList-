@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List SYSTUM</title>
+</head>
+    <link rel="stylesheet" href="todolist.css">
+<body>
+    <p>TODO LIST</p>
+<div class = "gaat">
+    <input class="js-task-input" type="text" placeholder="Enter task" onkeydown="
+    if(event.key == 'Enter'){
+        push(); 
+    }
+    ">
+    
+    <input class="js-date" type="date">
+
+    <button  onclick="
+        push(); 
+    ">Add</button>
+
+    <div class="js-todolist">
+    </div>
+</div>
+
+    <script src="todolist.js"> </script>
+</body>
+</html>
